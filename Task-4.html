@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>form</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .container {
+      height: 100vh;
+      width: 100vw;
+      background-color: orange;
+      padding: 50px;
+    }
+
+    label {
+      font-weight: bold;
+    }
+
+    .option {
+      width: 200px;
+    }
+
+    .btn {
+      width: 70px;
+      height: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Student Registration Form</h1>
+    <br>
+    <p>Fill in this form to register</p>
+    <br>
+    <br>
+    <form action="">
+
+      <label for="">First Name</label>
+      <input type="text" placeholder="Enter your first name">
+      <br>
+      <br>
+      <label for="">Last Name</label>
+      <input type="text" placeholder="Enter your last name">
+      <br>
+      <br>
+      <label for="">E-mail</label>
+      <input type="text" placeholder="Enter your e-mail">
+      <br>
+      <br>
+      <label for="">Date of Birth</label>
+      <input type="date">
+      <br>
+      <br>
+      <label for="">Set Username</label>
+      <input type="text" placeholder="Set Username">
+      <br>
+      <br>
+      <label for="">Set Password</label>
+      <input type="password" placeholder="Set Password">
+      <br>
+      <br>
+      <label for="">Gender</label>
+      <br>
+      <input type="radio">
+      <span for="">Male</span>
+      <br>
+      <input type="radio">
+      <span for="">Female</span>
+      <br>
+      <input type="radio">
+      <span for="">Others</span>
+      <br>
+      <br>
+      <label for="Course">Course :</label>
+      <select class="option">
+        <option value="Course">Course</option>
+      </select>
+      <br>
+      <br>
+      <button class="btn">Register</button>
+    </form>
+  </div>
+
+</body>
+
+</html>
