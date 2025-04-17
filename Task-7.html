@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      height: 100%;
+      width: 100%;
+    }
+
+    .container {
+      background-image: linear-gradient(to bottom right, yellow, red);
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .box {
+      display: flex;
+      width: 95vw;
+      height: 90vh;
+      border: 1px solid black;
+      background-color: white;
+    }
+
+    .left-side {
+      width: 20%;
+      border: 1px solid black;
+    }
+
+    .logo-box {
+      margin-top: 15px;
+      margin-bottom: 15px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .logo {
+      padding: 20px;
+      text-align: center;
+      width: 250px;
+      background-color: #ccffcc;
+      border: 1px solid black;
+    }
+
+    .right-side {
+      width: 80%;
+    }
+
+    h2{
+      text-decoration: underline;
+      text-align: center;
+      margin-top: 50px;
+      letter-spacing: 1px;
+      font-weight: 500;
+      font-size: xx-large;
+    }
+
+    .example {
+      display: flex;
+      justify-content: space-evenly;
+    }
+
+    .text-box, .example-box {
+      display: flex;
+      margin-top: 150px;
+      width: 250px;
+      height: 250px;
+      border: 1px solid black;
+      justify-content: center;
+      align-items: center;
+      font-size: xx-large;
+    }
+
+    .line {
+      height: 350px;
+      width: 1px;
+      background-color: black;
+      margin-top: 100px;
+    }
+
+    .btn {
+      background-color: #99ff66;
+      width: 150px;
+      padding: 5px;
+    }
+
+    .all-btn {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+      border: 1px solid black;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box">
+      <div class="left-side">
+        <div class="logo-box">
+          <div class="logo">Logo</div>
+        </div>
+        <div class="all-btn">
+          <button class="btn">Button</button>
+          <button class="btn">Button</button>
+          <button class="btn">Button</button>
+          <button class="btn">Button</button>
+        </div>
+        <div></div>
+      </div>
+      <div class="right-side">
+        <h2>This is a Example!</h2>
+        <div class="example">
+          <div class="text-box">Text</div>
+          <div class="line"></div>
+          <div class="example-box">Picture</div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</body>
+</html>

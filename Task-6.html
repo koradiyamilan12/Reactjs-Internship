@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html,
+  body {
+    height: 100%;
+    width: 100%;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+  }
+
+  .body-heading {
+    margin-left: -800px;
+  }
+
+  .header {
+    padding: 20px;
+    background-color: #e68484;
+    width: 60%;
+    margin: 10px;
+  }
+
+  .nav {
+    width: 60%;
+    padding: 12px;
+    padding-left: 20px;
+    margin: 10px;
+    background-color: #e68484;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-items {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nav-item {
+    background-color: white;
+    padding: 10px;
+    width: 50px;
+    margin: 10px;
+  }
+
+  .box {
+    display: flex;
+    margin: 10px;
+    gap: 20px;
+  }
+
+  .article {
+    background-color: #84d4f1;
+    width: 550px;
+  }
+
+  .section {
+    background-color: #b3e6ff;
+    padding: 20px;
+    margin: 10px;
+    margin-top: 20px;
+  }
+
+  .aside {
+    background-color: #d3d3d3;
+    width: 318px;
+  }
+
+  .aside-item {
+    background-color: white;
+    margin: 10px;
+    margin-top: 20px;
+    padding: 20px;
+  }
+
+  .footer {
+    width: 60%;
+    padding: 20px;
+    background-color: #e68484;
+  }
+
+  .box-heading {
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+</style>
+
+<body>
+
+  <div class="container">
+    <h2 class="body-heading">&lt;body&gt;</h2>
+    <header class="header">&lt;header&gt;</header>
+    <nav class="nav">
+      &lt;Nav&gt;
+      <div class="nav-items">
+        <div class="nav-item"></div>
+        <div class="nav-item"></div>
+        <div class="nav-item"></div>
+        <div class="nav-item"></div>
+      </div>
+    </nav>
+    <div class="box">
+      <article class="article">
+        <h2 class="box-heading">&lt;Article&gt;</h2>
+        <section class="section">&lt;section&gt;</section>
+        <section class="section">&lt;section&gt;</section>
+        <section class="section">&lt;section&gt;</section>
+      </article>
+      <aside class="aside">
+        <h2 class="box-heading">&lt;Aside&gt;</h2>
+        <div class="aside-item"></div>
+        <div class="aside-item"></div>
+      </aside>
+    </div>
+    <footer class="footer">&lt;Footer&gt;</footer>
+  </div>
+</body>
+
+</html>
