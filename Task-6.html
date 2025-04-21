@@ -21,7 +21,6 @@
 
   .container {
     display: flex;
-    justify-content: center;
     flex-direction: column;
     align-items: center;
     margin: 20px;
@@ -36,6 +35,7 @@
     background-color: #e68484;
     width: 60%;
     margin: 10px;
+    font-weight: 900;
   }
 
   .nav {
@@ -47,6 +47,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-weight: 900;
   }
 
   .nav-items {
@@ -61,7 +62,7 @@
     margin: 10px;
   }
 
-  .box {
+  .main {
     display: flex;
     margin: 10px;
     gap: 20px;
@@ -77,6 +78,7 @@
     padding: 20px;
     margin: 10px;
     margin-top: 20px;
+    font-weight: 900;
   }
 
   .aside {
@@ -95,6 +97,7 @@
     width: 60%;
     padding: 20px;
     background-color: #e68484;
+    font-weight: 900;
   }
 
   .box-heading {
@@ -104,7 +107,6 @@
 </style>
 
 <body>
-
   <div class="container">
     <h2 class="body-heading">&lt;body&gt;</h2>
     <header class="header">&lt;header&gt;</header>
@@ -117,7 +119,7 @@
         <div class="nav-item"></div>
       </div>
     </nav>
-    <div class="box">
+    <main class="main">
       <article class="article">
         <h2 class="box-heading">&lt;Article&gt;</h2>
         <section class="section">&lt;section&gt;</section>
@@ -129,7 +131,7 @@
         <div class="aside-item"></div>
         <div class="aside-item"></div>
       </aside>
-    </div>
+    </main>
     <footer class="footer">&lt;Footer&gt;</footer>
   </div>
 </body>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WONTED</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      height: 100vh;
+      width: 100vw;
+      background-color: #aa434327;
+      overflow: hidden;
+    }
+
+    .container {
+      margin: auto;
+      width: 1080px;
+      height: 100%;
+    }
+
+    .nav {
+      display: flex;
+      background-color: white;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 30px;
+      padding: 5px;
+    }
+
+    div>a {
+      text-decoration: none;
+      color: black;
+      margin-left: 20px;
+      font-weight: 500;
+    }
+
+
+    .hero-section {
+      display: flex;
+      margin-top: 50px;
+      position: relative;
+      justify-content: space-between;
+    }
+
+    .left-side {
+      margin-top: 100px;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      font-family: Arial, Helvetica, sans-serif;
+      width: 50%;
+    }
+
+    .hero-img {
+      height: 500px;
+    }
+
+    .heading {
+      color: #aa4343;
+      font-weight: 700;
+    }
+
+    .btn-search {
+      background-color: white;
+      width: 300px;
+    }
+
+    .btn {
+      background-color: #aa4343;
+      width: 100px;
+      text-align: center;
+      display: flex;
+      margin-left: 200px;
+      padding: 15px;
+      color: white;
+    }
+
+    .shape1,
+    .shape2 {
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      border-radius: 100%;
+      border: 5px solid #aa4343;
+      opacity: 15%;
+    }
+
+    .shape1 {
+      top: 55px;
+    }
+
+    .shape2 {
+      position: absolute;
+      left: 100px;
+      bottom: 0px;
+    }
+
+    .shape3 {
+      position: absolute;
+      opacity: 15%;
+      width: 25px;
+      height: 25px;
+      border-radius: 100%;
+      border: 5px solid #aa4343;
+      left: 330px;
+      top: 190px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="container">
+      <nav class="nav">
+        <div class="nav-logo">
+          <img src="./assets/logo.png" alt="">
+        </div>
+        <div class="nav-item">
+          <a href="#">Home</a>
+          <a href="#">Benefits</a>
+          <a href="#">Review</a>
+          <a href="#">Contact</a>
+        </div>
+      </nav>
+
+      <div class="hero-section">
+        <div class="shape1"></div>
+        <div class="shape2"></div>
+        <div class="shape3"></div>
+        <div class="left-side">
+          <p class="heading">LET'S MAKE THE BEST INVESTMENT</p>
+          <h1>There Is No Friend As <br> Loyal As A Book</h1>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga et veniam aut Lorem ipsum dolor, sit amet
+            consectetur adipisicing elit. Quasi ipsa atque consequuntur magni? Sit, natus aspernatur iusto iure alias
+            doloribus minima eius id. adipisci aspernatur sed nobis ab nihil repudiandae aliquid?
+          </p>
+          <div class="btn-search">
+            <div class="btn">Subscribe</div>
+          </div>
+        </div>
+        <div class="right-side">
+          <img src="./assets/hero.png" alt="" class="hero-img">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
