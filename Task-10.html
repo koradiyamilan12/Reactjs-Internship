@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interior design</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    
+    html,
+    body {
+      height: 100%;
+      width: 100%;
+      background-color: #c3c9c7;
+      color: #2b2b2b;
+      font-family: 'Segoe UI', sans-serif;
+      overflow: hidden;
+    }
+
+    .container {
+      height: 100%;
+      margin: auto;
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+    }
+
+    .heading-text {
+      width: 50%;
+      position: relative;
+      left: 300px;
+      z-index: 2;
+      margin-top: 50px;
+    }
+
+    .heading {
+      font-size: 85px;
+      font-family: sans-serif;
+    }
+
+    .heading-para {
+      margin-top: 10px;
+      margin-bottom: 20px;
+      color: #444;
+    }
+
+    .heading-btn {
+      padding: 10px;
+      width: 120px;
+      border: 2px solid #2b2d24;
+      color: white;
+      background-color: #2b2d24;
+      border-radius: 100px;
+    }
+
+    .img1 {
+      position: absolute;
+      height: 400px;
+      left: 100px;
+      top: 330px;
+      z-index: 1;
+    }
+
+    .img2 {
+      position: absolute;
+      height: 400px;
+      top: -20px;
+      right: 100px;
+      z-index: 1;
+    }
+
+    .info {
+      background-color: #dde2e06b;
+      width: 70%;
+      padding: 20px;
+      border-radius: 130px;
+      display: flex;
+      position: relative;
+      left: 380px;
+      justify-content: space-around;
+      z-index: 3;
+      margin-bottom: 30px;
+    }
+
+    .info-text {
+      width: 200px;
+    }
+
+    .line {
+      width: 35px;
+      height: 3px;
+      background-color: black;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    div>span {
+      font-weight: 700;
+      font-size: x-large;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <img src="./assets/img1.jpg" alt="" class="img1">
+    <img src="./assets/img2.jpg" alt="" class="img2">
+    <div class="heading-text">
+      <h1 class="heading">Interior design</h1>
+      <p class="heading-para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis, magnam provident
+        omnis animi maxime autem possimus quam tenetur beatae vero, dolorem, veritatis excepturi similique nostrum
+        quaerat deleniti officiis eum. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus, provident?</p>
+      <button class="heading-btn">Explore</button>
+    </div>
+    <div class="info">
+      <div class="info-text">
+        <span>5.8</span>
+        <div class="line"></div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam sunt consectetur ab voluptate expedita Lorem
+          ipsum
+          distinctio optio omnis fuga nulla pariatur Lorem ipsum dolor.</p>
+      </div>
+      <div class="info-text">
+        <span>99+</span>
+        <div class="line"></div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consectetur ab voluptate Lorem ipsum
+          dolor pariatur
+          distinctio optio omnis fuga nulla pariatur Lorem ipsum.</p>
+      </div>
+      <div class="info-text">
+        <span>110K</span>
+        <div class="line"></div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam sunt consectetur ab voluptate expedita fuga
+          nulla
+          distinctio optio omnis fuga nulla pariatur Lorem ipsum dolor sit amet</p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

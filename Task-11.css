@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  width: 1533.25px;  
+  margin: auto;
+}
+
+.nav-bar {
+  height: 70px;
+  position: relative;
+  top: 43px;
+  left: 194px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-item {
+  width: 174px;
+  height: 52.7px;
+  color: #373F50;
+}
