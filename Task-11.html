@@ -1,37 +1,358 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+  <!-- Meta and title -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="Task-11.css">
+  <title>Real Estate Training</title>
+  <!-- External CSS file -->
+  <link rel="stylesheet" href="./Task-11.css">
 </head>
+
 <body>
+
   <div class="container">
-    <div class="hero-section">
+
+    <!-- Header Section -->
+    <header>
+
+      <!-- Navigation Bar -->
       <nav class="nav-bar">
-        <div class="nav-item">
-          <div class="">ASCENT</div>
-          <div class="">Solutions made easy</div>
-        </div>
         <div>
-          <a href="">Home</a>
-          <a href="">Villas</a>
-          <a href="">Gallery</a>
-          <a href="">About us</a>
-          <a href="">Contact</a>
+          <img src="./images/LOGO.png" alt="logo" class="logo">
         </div>
+        <!-- Menu Items -->
+        <div class="menu-bar">
+          <a href="#home">Home</a>
+          <a href="#villa">Villas</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#about-us">About us</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <!-- Find Villa Button and Language Selector -->
         <div>
-          <button>FIND A VILLA</button>
-          <select name="cars" id="cars">
-            <option value="volvo">Volvo</option>
-            <option value="saab">Saab</option>
-            <option value="opel">Opel</option>
-            <option value="audi">Audi</option>
+          <button class="nav-btn">
+            FIND A VILLA
+          </button>
+          <select class="drop-down">
+            <option>Eng</option>
+            <option>Guj</option>
           </select>
         </div>
       </nav>
-    </div>
+
+      <div class="line1"></div>
+
+      <!-- Decorative Shapes -->
+      <img src="./images/shape1.png" alt="" class="shape1">
+      <img src="./images/shape2.png" alt="" class="shape2">
+
+      <!-- Hero Section -->
+      <section class="hero-section" id="home">
+        <div class="hero-section-text">
+          <h1 class="hero-section-heading">A Premier
+            Real Estate Professional</h1>
+          <p class="hero-section-para">Own a premium townhouse
+            that will generate you
+            passive income up
+            to 115-130% after development.</p>
+          <button class="hero-section-btn">See the projects</button>
+        </div>
+        <div class="hero-section-images">
+          <img src="./images/home.png" alt="Home Image" class="home-img">
+          <img src="./images/play.svg.png" alt="Play Image" class="play-img">
+        </div>
+      </section>
+
+      <!-- Image Slide Indicator -->
+      <div class="image-count">
+        <div class="arrow">
+          01 / 08
+          <img src="./images/left-arrow.png" alt="left arrow">
+          <img src="./images/right-arrow.png" alt="right arrow">
+        </div>
+      </div>
+
+      <!-- Search Home Section -->
+      <div class="search-container">
+        <h2>LET’S FIND A HOME THAT’S PERFECT FOR YOU</h2>
+        <div class="form-row">
+          <!-- Input fields for search -->
+          <div class="form-group">
+            <label for="price">PRICE US DOLLAR</label>
+            <input type="text" id="price" value="120000">
+          </div>
+          <div class="form-group">
+            <label for="state">STATE</label>
+            <input type="text" id="state" placeholder="Enter here">
+          </div>
+          <div class="form-group">
+            <label for="city">CITY</label>
+            <input type="text" id="city" placeholder="Enter here">
+          </div>
+          <div class="form-group">
+            <label for="rooms">ROOMS</label>
+            <input type="text" id="rooms" placeholder="Enter here">
+          </div>
+          <button class="find-button">FIND A HOME</button>
+        </div>
+      </div>
+
+    </header>
+
+    <main class="main">
+
+      <!-- Villas Section -->
+      <section>
+        <div class="heading-text">
+          <h2 class="main-heding">Real Estate for your World</h2>
+          <p>See All</p>
+        </div>
+
+        <!-- Villa Cards -->
+        <div class="cards-container" id="villa">
+          <div class="card-details1">
+            <h2>01</h2>
+            <span>SUNNY VILLAGE BERAWA - VILLA</span>
+            <p>Complex modern villas in Tetas</p>
+            <img src="./images/Arr.png" alt="" class="arrow-icon">
+          </div>
+
+          <div class="card-details2">
+            <h2>02</h2>
+            <span>MAURIS VILLAGE MOLLIS - VILLA</span>
+            <p>Complex modern villas in California</p>
+            <img src="./images/Arr.png" alt="" class="arrow-icon">
+          </div>
+
+          <div class="card-details3">
+            <h2>03</h2>
+            <span>LUXURY VILLAGE DONEC - VILLA</span>
+            <p>Complex modern villas in Floric</p>
+            <img src="./images/Arr.png" alt="" class="arrow-icon">
+          </div>
+
+          <div class="card-details4">
+            <h2>04</h2>
+            <span>SUNNY VILLAGE BERAWA - VILLA</span>
+            <p>Complex modern villas in Tetas</p>
+            <img src="./images/Arr.png" alt="" class="arrow-icon">
+          </div>
+
+          <img src="./images/card1.jpg" alt="" class="card">
+          <img src="./images/card2.jpg" alt="" class="card">
+          <img src="./images/card3.jpg" alt="" class="card">
+          <img src="./images/card4.jpg" alt="" class="card">
+        </div>
+        <div class="image-count">
+          01 / 08
+          <img src="./images/left-arrow.png" alt="left arrow">
+          <img src="./images/right-arrow.png" alt="right arrow">
+        </div>
+      </section>
+
+      <!-- Find Your Paradise Section -->
+      <section class="info-container">
+        <img src="./images/shape.3.png" alt="" class="info-shape">
+        <div class="hero-section-text find-section">
+          <h1 class="hero-section-heading">Find your luxurious paradise here</h1>
+          <p class="hero-section-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed odio massa,
+            ultricies ut lobortis ac, egestas sit amet urna. Aenean vitae dapibus ligula, quis porttitor erat.</p>
+          <button class="hero-section-btn">find out more</button>
+        </div>
+        <div class="images">
+          <img src="./images/Group 4.png" alt="" class="image1">
+          <img src="./images/Group 5.png" alt="" class="image2">
+        </div>
+      </section>
+
+      <!-- Home/Villa Details Section -->
+      <section class="home-container">
+        <img src="./images/home-details.png" alt="Villa Interior" class="villa-image" />
+        <div class="home-box">
+          <img src="./images/shape4.png" alt="" class="shape4">
+          <div class="left-section">
+            <p class="description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed odio massa, ultricies ut lobortis ac, egestas
+              sit amet urna. Aenean vitae dapibus ligula, quis porttitor erat.
+            </p>
+          </div>
+          <div class="right-section">
+            <div class="info-box1">
+              <div class="info-number">01</div>
+              <div class="info-text">
+                <p class="info-title">Number of premium villas</p>
+                <p class="info-value">103</p>
+              </div>
+            </div>
+            <div class="info-box">
+              <div class="info-number">02</div>
+              <div class="info-text">
+                <p class="info-title">Year of construction</p>
+                <p class="info-value">2021</p>
+              </div>
+            </div>
+            <div class="info-box">
+              <div class="info-number">03</div>
+              <div class="info-text">
+                <p class="info-title">Usable villa space</p>
+                <p class="info-value">1452 m²</p>
+              </div>
+            </div>
+            <div class="info-box">
+              <div class="info-number">04</div>
+              <div class="info-text">
+                <p class="info-title">Average villa price</p>
+                <p class="info-value">$ 3,075,000</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Why Us Section -->
+      <section class="why-us" id="about-us">
+        <div>
+          <h4 class="section-subtitle">WHY US</h4>
+        </div>
+        <div class="main-feature">
+          <h1 class="section-title">LEADER AND EXPERT IN THE CONSTRUCTION OF HIGH-YIELD INVESTMENT PROPERTIES</h1>
+          <h2 class="team-title">ASCENT - TEAM OF PROFESSIONALS!</h2>
+
+          <!-- Features List -->
+          <div class="features">
+            <div>
+              <div class="feature-item">
+                <img src="./images/icon-1.png" alt="Star Icon" class="feature-icon" />
+                <p class="feature-text"><strong>We know the market<br>inside out</strong></p>
+              </div>
+              <div class="feature-item">
+              </div>
+              <img src="./images/icon-3.png" alt="Deal Icon" class="feature-icon" />
+              <p class="feature-text"><strong>We'll get you the best<br>deal possible</strong></p>
+            </div>
+            <div>
+              <div class="feature-item">
+                <img src="./images/icon-2.png" alt="Thumb Icon" class="feature-icon" />
+                <p class="feature-text"><strong>High standards,<br>great result</strong></p>
+              </div>
+              <div class="feature-item">
+                <img src="./images/icon-4.png" alt="Team Icon" class="feature-icon" />
+                <p class="feature-text"><strong>Our team of professionals has<br>been working together for
+                    well<br>overadecade.</strong></p>
+              </div>
+            </div>
+          </div>
+          <button class="cta-button">FIND OUT MORE</button>
+        </div>
+      </section>
+
+      <!-- Banner Shapes -->
+      <div class="shapes">
+        <img src="./images/shape6.png" alt="" class="leftside-shape">
+        <img src="./images/shape1.png" alt="" class="leftside-shape2">
+        <img src="./images/shape5.png" alt="" class="rightside-shape">
+        <section class="banner">
+      </div>
+
+      <!-- Banner Image -->
+      <img src="./images/Group 6.jpg" alt="Modern Villa" class="banner-image" />
+      </section>
+
+      <!-- Gallery Section -->
+      <section class="gallery-section" id="gallery">
+        <div class="gallery-header">
+          <h2 class="gallery-title">EXPLORE OUR GALLERY</h2>
+          <a href="#" class="gallery-link">See All</a>
+        </div>
+        <div class="gallery-grid">
+          <img src="./images/photo1.png" alt="Gallery Image 1" class="gallery-image" />
+          <img src="./images/photo2.jpg" alt="Gallery Image 2" class="gallery-image" />
+          <img src="./images/photo3.png" alt="Gallery Image 3" class="gallery-image" />
+          <img src="./images/photo4.jpg" alt="Gallery Image 4" class="gallery-image" />
+          <img src="./images/photo5.jpg" alt="Gallery Image 5" class="gallery-image" />
+          <img src="./images/photo6.jpg" alt="Gallery Image 6" class="gallery-image" />
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="contact-section" id="contact">
+        <div>
+          <h1 class="contact-heading">WE ARE LOOKING FORWARD<br>TO YOUR ENQUIRY</h1>
+          <form class="contact-form">
+            <!-- Input Fields -->
+            <div class="form-row">
+              <input type="text" class="form-input" placeholder="Name" />
+              <input type="email" class="form-input" placeholder="E-mail" />
+            </div>
+            <div class="form-row">
+              <input type="text" class="form-input" placeholder="Subject" />
+              <input type="text" class="form-input" placeholder="Phone number" />
+            </div>
+            <div class="form-row">
+              <textarea class="form-textarea" placeholder="Message"></textarea>
+            </div>
+            <!-- Checkboxes -->
+            <div class="form-checkboxes">
+              <label><input type="checkbox" /> Following for general interests</label>
+              <label><input type="checkbox" /> Interested in buying a home</label>
+              <label><input type="checkbox" /> Interested in a rental property</label>
+            </div>
+            <button type="submit" class="form-button">SEND MESSAGE</button>
+          </form>
+        </div>
+        <img src="./images/home-image.png" alt="" class="home-img-form">
+      </section>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="./images/footer-logo.png" alt="" class="footer-logo">
+        </div>
+        <!-- Footer Menu Links -->
+        <div class="footer-menu">
+          <h4>Menu</h4>
+          <ul>
+            <li>Home</li>
+            <li>Villas</li>
+            <li>Gallery</li>
+            <li>About us</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+        <!-- Footer Contact Info -->
+        <div class="footer-contact">
+          <h4>Contact</h4>
+          <p>Ascent@contact.com</p>
+          <p>+012-345-6789</p>
+          <p>9890 Lorem ipsum street,<br> Pellentesque, CA, USA</p>
+        </div>
+        <!-- Footer Social -->
+        <div class="footer-social">
+          <h4>Social</h4>
+          <div class="social-icons">
+            <img src="./images/social.png" alt="">
+          </div>
+        </div>
+      </div>
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <p>Copyright Doctreativemarket</p>
+        <p>Terms of Use</p>
+        <p>Privacy Policy</p>
+      </div>
+      <!-- Footer Decorative Shapes -->
+      <img src="./images/shape1.png" alt="" class="left-shape1">
+      <img src="./images/shape2.png" alt="" class="left-shape2">
+      <img src="./images/shape1.png" alt="" class="right-shape1">
+      <img src="./images/shape2.png" alt="" class="right-shape2">
+    </footer>
+
   </div>
 </body>
+
 </html>
