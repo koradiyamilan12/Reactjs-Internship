@@ -1,4 +1,4 @@
-// Write a function to print array elements in reverse order using for loop
+// 6. Write a function to print array elements in reverse order using for loop
 
 const numbers = [1, 2, 3, 4, 5];
 

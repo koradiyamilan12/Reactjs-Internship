@@ -263,28 +263,77 @@
 
 // const [car, truck, suv] = vehicles;
 
-let arr = [1, 2, 3, 4, 5, 0, -3, -5, -4]
+// let arr = [1, 2, 3, 4, 5, 0, -3, -5, -4];
 
-// map (for loop)
-const result = arr.map((item) => {
-  return item * 5
-})
+// // map (for loop)
+// const result = arr.map((item) => {
+//   return item * 5;
+// });
 
-console.log({ result })
+// // console.log({ result })
 
-// filter (for loop + condition)
-const res = arr.filter((element) => {
-  return element < 0
-})
+// // filter (for loop + condition)
+// const res = arr.filter((element) => {
+//   return element < 0;
+// });
 
-console.log(res)
+// // console.log(res)
 
-// reduce
-const res1 = arr.reduce((acc, curr) => {
-  return acc = acc + curr
-}, 0)
+// // reduce
+// const res1 = arr.reduce((acc, curr) => {
+//   return acc = acc + curr;
+// }, 0);
 
-console.log({ res1 })
+// // console.log({ res1 })
+
+
+// let array = [1, 2, 3, 4, 5];
+
+// // map method
+// let ans = array.map((val) => {
+//   return val + 1;
+// });
+
+// console.log(ans);
+
+// // filter method
+// let results = array.filter((elem) => {
+//   return elem < 3;
+// });
+// console.log(results);
+
+// // reduce method
+// let results2 = array.reduce((eccu, el) => {
+//   return eccu * el;
+// }, 1);
+// console.log(results2);
+
+
+// JavaScript (ES6+)✅
+// Variable (let, const)✅
+// Arrow function✅
+// Template literals✅
+// Destructuring✅
+// import & export✅
+// Spread / rest operators✅
+// Array methods (map, filter, reduce)✅
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
