@@ -1,0 +1,17 @@
+.no-notes-container {
+  margin: auto;
+}
+
+.main-note-heading {
+  margin-top: 20px;
+  margin-left: 200px;
+  width: 1080px;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.no-notes {
+  margin-top: 30px;
+  font-size: 2rem;
+  font-weight: bolder;
+}
