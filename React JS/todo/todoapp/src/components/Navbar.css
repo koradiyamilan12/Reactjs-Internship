@@ -1,0 +1,95 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 36px;
+  background-color: #272727;
+  color: white;
+  align-items: center;
+  width: 100%;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.logo-container>a {
+  text-decoration: none;
+  color: white;
+}
+
+.navbar-check-icon {
+  color: black;
+  width: 20px;
+}
+
+.logo-icon {
+  margin-left: 5px;
+  background-color: gold;
+  width: 20px;
+  height: auto;
+  padding: 3px;
+  border-radius: 3px;
+}
+
+.nav-items {
+  position: relative;
+}
+
+.nav-items>a {
+  text-decoration: none;
+  color: white;
+  margin: 0px 10px;
+  font-size: 1.1rem;
+}
+
+.navbar-rightside {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.moon-icon,
+.sun-icon {
+  margin-right: 20px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.nav-btn {
+  color: white;
+  padding: 10px 30px;
+  border: 2px solid crimson;
+  background-color: crimson;
+  border-radius: 9px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.nav-btn:hover {
+  border: 2px solid crimson;
+  color: crimson;
+  background-color: transparent;
+}
+
+
+.underline {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 65px;
+  background-color: gold;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.nav-item:hover .underline,
+.nav-item:active .underline {
+  transform: scaleX(1);
+}
+

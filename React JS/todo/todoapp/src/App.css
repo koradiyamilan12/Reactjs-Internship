@@ -1,0 +1,70 @@
+ :root {
+   --dark: #393939;
+   --white: #e4e4e4;
+   --seccolor: #fff;
+   --darkgray: #272727;
+ }
+
+ .darkmode {
+   background-color: var(--dark);
+   color: var(--white);
+ }
+
+ .lightmode {
+   background-color: var(--white);
+   color: var(--dark);
+ }
+
+
+ .container {
+   /* background-color: #393939; */
+   padding: 30px;
+   min-height: 100vh;
+ }
+
+ .main-heading {
+   margin-top: 30px;
+ }
+
+ .check-logo {
+   background-color: gold;
+   color: black;
+   border-radius: 3px;
+   padding: 4px;
+   width: 28px;
+   height: auto;
+ }
+
+ .todo-container {
+   /* background-color: #272727; */
+   /* color: white; */
+   max-width: 1200px;
+   height: auto;
+   margin: auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ }
+
+ .task-note-container {
+   padding: 20px 0px;
+   width: 80%;
+   margin: auto;
+   display: flex;
+   flex-wrap: wrap;
+ }
+
+ .no-task-warning {
+   margin: auto;
+   font-size: 1.4rem;
+   font-weight: 400;
+ }
+
+ .page-notefound-heading {
+   margin-top: 300px;
+   color: red;
+   font-size: 3rem;
+   text-align: center;
+ }

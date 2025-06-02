@@ -1,0 +1,88 @@
+.note {
+  width: 290px;
+  height: 200px;
+  border-radius: 9px;
+  margin: 12px;
+  padding: 25px;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  background-color: #fff2aa;
+}
+
+.task-titel {
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.note-complete {
+  text-decoration: line-through;
+}
+
+.btn-container {
+  display: flex;
+  gap: 10px;
+  justify-content: end;
+  align-items: center;
+}
+
+.checkBtn {
+  padding: 8px;
+  height: 40px;
+  width: 40px;
+  border: none;
+  border-radius: 9px;
+  background-color: gold;
+  cursor: pointer;
+}
+
+.checkIcon {
+  color: white;
+  font-size: 1.3rem;
+}
+
+.editBtn {
+  padding: 8px;
+  height: 40px;
+  width: 40px;
+  border: none;
+  border-radius: 9px;
+  background-color: #6495ed;
+  cursor: pointer;
+}
+
+.editIcon {
+  color: white;
+  font-size: 1.3rem;
+}
+
+.deleteBtn {
+  padding: 8px;
+  height: 40px;
+  width: 40px;
+  border: none;
+  border-radius: 9px;
+  background-color: #f3345b;
+  cursor: pointer;
+}
+
+.deleteIcon {
+  color: white;
+  font-size: 1.3rem;
+}
+
+.moreBtn {
+  padding: 8px;
+  height: 40px;
+  width: 40px;
+  border: none;
+  border-radius: 9px;
+  background-color: #1f1f1f;
+  cursor: pointer;
+}
+
+.leftarrowIcon {
+  color: white;
+  font-size: 1.3rem;
+}

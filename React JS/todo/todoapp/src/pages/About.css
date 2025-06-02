@@ -1,0 +1,34 @@
+.about-wrapper {
+  height: 100vh;
+  width: 100vw;
+  color: #fff;
+  background-color: #393939;
+}
+
+.about-container {
+  padding: 50px 0px;
+  max-width: 1080px;
+  margin: auto;
+}
+
+.about-heading {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.about-line {
+  margin: 5px 0px;
+  width: 100%;
+  height: 5px;
+  background-color: gold;
+}
+
+.about-desc {
+  font-size: 1.3rem;
+  margin: 20px 0px;
+  text-align: justify;
+}
+
+.about-desc > span {
+  color: crimson;
+}
