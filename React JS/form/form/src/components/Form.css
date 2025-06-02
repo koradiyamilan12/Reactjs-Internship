@@ -1,0 +1,88 @@
+.form-container {
+  width: 470px;
+  background-color: #0f172a;
+  color: white;
+  height: 100vh;
+  padding: 20px;
+}
+
+.form-heading {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.registration-form {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-field-wrapper {
+  display: flex;
+  gap: 10px;
+}
+
+.form-label {
+  display: block;
+  font-weight: 600;
+  margin: 8px 0px;
+}
+
+.form-input,
+.form-textarea {
+  width: 100%;
+  border: 2px solid #313d4d;
+  border-radius: 4px;
+  padding: 10px;
+  background-color: #313d4d;
+  color: white;
+}
+
+.form-textarea {
+  margin-top: 5px;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  border-color: #576cbd;
+  outline: none;
+}
+
+.form-error {
+  color: red;
+}
+
+.form-file-input {
+  width: 100%;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 1rem;
+  background-color: #313d4d;
+  margin-bottom: 15px;
+}
+
+.btn-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.form-btn {
+  width: 100px;
+  border: none;
+  border-radius: 9px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: #576cbd;
+  color: white;
+  cursor: pointer;
+}
+
+.form-btn:active {
+  scale: 0.95;
+}
+
+.form-btn:hover {
+  background-color: #3450c4;
+}
