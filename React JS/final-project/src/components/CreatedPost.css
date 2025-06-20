@@ -1,0 +1,12 @@
+.created-post-section {
+  background-color: #7995c0;
+}
+
+.no-post-created {
+  padding: 30px;
+  width: 100%;
+  font-size: 2rem;
+  text-align: center;
+  color: crimson;
+  font-weight: 600;
+}

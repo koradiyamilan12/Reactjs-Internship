@@ -1,0 +1,96 @@
+.login-section {
+  background-color: #7995c0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.login-form {
+  padding: 30px;
+  background-color: #1E293B;
+  border-radius: 9px;
+  color: white;
+  position: relative;
+  top: 100px;
+  margin: auto;
+  width: 400px;
+  height: auto;
+}
+
+.form-heading {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.radio-wrapper {
+  display: flex;
+  gap: 5px;
+}
+
+.form-label {
+  font-size: 1rem;
+  margin: 10px 0px;
+  font-weight: 600;
+}
+
+.form-input {
+  font-size: .9rem;
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0px;
+  border-radius: 4px;
+}
+
+.form-errors {
+  font-size: .8rem;
+  font-weight: 500;
+  color: red;
+}
+
+.btn-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.otp-container {
+  display: flex;
+}
+
+.otp-generate-btn {
+   background-color: crimson;
+  border: 2px solid crimson;
+  border-radius: 9px;
+  font-size: 1rem;
+  color: white;
+  cursor: pointer;
+  transition: ease 0.3s;
+  text-decoration: none;
+}
+
+.otp-generate-btn:hover {
+  color: crimson;
+  background-color: transparent;
+}
+
+.login-form-btn {
+  padding: 10px 40px;
+  background-color: green;
+  border: 2px solid green;
+  border-radius: 9px;
+  font-size: 1.1rem;
+  color: white;
+  cursor: pointer;
+  transition: ease 0.3s;
+  text-decoration: none;
+}
+
+.login-form-btn:hover {
+  color: green;
+  background-color: transparent;
+}
+

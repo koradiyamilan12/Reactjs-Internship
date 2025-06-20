@@ -1,0 +1,69 @@
+.create-post-section {
+  background-color: #7995c0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.create-post-form {
+  padding: 20px;
+  background-color: #1E293B;
+  width: 600px;
+  margin: 30px auto;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.create-post-form-heading {
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+}
+
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.create-post-form-label {
+  color: #E2E8F0;
+  font-size: 1.2rem;
+  margin-bottom: 5px
+}
+
+.image-input {
+  color: white;
+}
+
+.create-post-form-input {
+  padding: 10px;
+  border: 2px solid #4B5563;
+  border-radius: 8px;
+}
+
+.create-post-form-error {
+  color: crimson;
+  margin: 5px 0px 0px;
+  font-size: .9rem;
+}
+
+.btn-wrapper {
+  margin: 10px 0px auto;
+}
+
+.create-post-form-btn {
+  cursor: pointer;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: #3549fb;
+  color: #FFFFFF;
+}
+
+.create-post-form-btn:hover {
+  background-color: #393bc6;
+}

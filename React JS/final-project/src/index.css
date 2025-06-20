@@ -1,0 +1,28 @@
+:root {
+  --bg: #F9FAFB;
+  --text: #111827;
+  --surface: #ffffff;
+  --primary: #4F46E5;
+  --accent: #F97316;
+}
+
+.dark {
+  --bg: #0F172A;
+  --text: #F1F5F9;
+  --surface: #1E293B;
+  --primary: #6366F1;
+  --accent: #FB923C;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', 'Poppins', sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}

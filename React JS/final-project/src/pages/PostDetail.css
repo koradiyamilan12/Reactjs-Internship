@@ -1,0 +1,136 @@
+.post-detail-wrapper {
+  background-color: #7995c0;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  padding: 6rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.post-preview {
+  flex: 1;
+  max-width: 400px;
+  padding: 1rem;
+  border: 2px solid #334155;
+  border-radius: 12px;
+  background-color: #1E293B;
+  color: #F8FAFC;
+  text-align: center;
+}
+
+.post-preview h2 {
+  margin-bottom: 1rem;
+  color: #F8FAFC;
+}
+
+.post-preview-image {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+}
+
+.post-preview-title {
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
+  color: #F8FAFC;
+}
+
+.post-preview-description {
+  color: #CDD5E1;
+  font-size: 1rem;
+}
+
+
+.post-detail-form {
+  flex: 1;
+  max-width: 500px;
+  padding: 1.5rem;
+  border: 2px solid #334155;
+  border-radius: 12px; 
+  background-color: #1E293B;
+  color: #F8FAFC;
+}
+
+.post-detail-form h2 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #F8FAFC;
+  font-size: 2rem;
+}
+
+.post-detail-form div {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.post-detail-form label {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #E2E8F0;
+}
+
+.post-detail-form input[type="text"],
+.post-detail-form textarea,
+.post-detail-form input[type="file"] {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 2px solid #4B5563;
+  border-radius: 8px;
+  background-color: transparent;
+  color: #F8FAFC;
+}
+
+.post-detail-form textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.form-error {
+  color: crimson;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+.post-detail-btn-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.post-detail-btn-wrapper button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 9px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  font-weight: 600;
+  border: 2px solid transparent;
+}
+
+.post-detail-btn-wrapper button[type="button"] {
+  background-color: crimson;
+  color: white;
+  border-color: crimson;
+}
+
+.post-detail-btn-wrapper button[type="button"]:hover {
+  background-color: transparent;
+  color: crimson;
+}
+
+.post-detail-btn-wrapper button[type="submit"] {
+  background-color: #22C55E;
+  color: white;
+  border-color: #22C55E;
+}
+
+.post-detail-btn-wrapper button[type="submit"]:hover {
+  background-color: transparent;
+  color: #22C55E;
+}
+
