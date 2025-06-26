@@ -6,19 +6,35 @@ import Alltodos from "./pages/Alltodos";
 import Login from "./components/Login";
 import Register from "./components/Register";
 import TodoDetail from "./pages/TodoDetail";
+import RootLayout from "./components/RootLayout";
+import PrivateRoute from "./pages/PrivateRoute";
+import PageNotFound from "./pages/PageNotFound";
 
 const routes = createBrowserRouter([
   {
     path: "/",
-    element: <HomePage />,
-  },
-  {
-    path: "/about",
-    element: <About />,
-  },
-  {
-    path: "/alltodos",
-    element: <Alltodos />,
+    element: (
+      <PrivateRoute>
+        <RootLayout />
+      </PrivateRoute>
+    ),
+    children: [
+      {
+        path: "/",
+        element: <HomePage />,
+      },
+      {
+        path: "/about",
+        element: <About />,
+      },
+      {
+        path: "/alltodos",
+        element: <Alltodos />,
+      },
+      { path: "/todo/:todoId",
+        element: <TodoDetail /> 
+      },
+    ],
   },
   {
     path: "/login",
@@ -28,10 +44,9 @@ const routes = createBrowserRouter([
     path: "/register",
     element: <Register />,
   },
-  { path: "/todo/:todoId", element: <TodoDetail /> },
   {
-    path: "/*",
-    element: <h1 className="page-notefound-heading">404 Page Not Found</h1>,
+    path: "*",
+    element: <PageNotFound />,
   },
 ]);
 

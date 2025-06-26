@@ -5,9 +5,7 @@ export default function Navbar() {
     <nav className="nav-bar">
       <div className="left-side">
         <img className="nav-logo" src={reactlogo} alt="logo" />
-        <h1>
-          React JS
-        </h1>
+        <h1>React JS</h1>
       </div>
       <div className="right-side">
         <a href="#">Home</a>
@@ -18,6 +16,3 @@ export default function Navbar() {
     </nav>
   );
 }
-
-// defaut export
-// named export

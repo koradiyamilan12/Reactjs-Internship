@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "./PostCard.css";
 import { FaEdit } from "react-icons/fa";
 import { MdDeleteForever } from "react-icons/md";
@@ -5,6 +6,8 @@ import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 
 const PostCard = ({ id, title, image, description, setData }) => {
+  const [isExpanded, setIsExpanded] = useState(false);
+
   const { role } = JSON.parse(localStorage.getItem("login_data"));
   const navigate = useNavigate();
 
@@ -14,8 +17,8 @@ const PostCard = ({ id, title, image, description, setData }) => {
     }
   };
 
-  const handlerReadMore = () => {
-    navigate(`/post/${id}`);
+  const toggleDescription = () => {
+    setIsExpanded((prev) => !prev);
   };
 
   const handlerDelete = (idToDelete) => {
@@ -44,8 +47,27 @@ const PostCard = ({ id, title, image, description, setData }) => {
           <p className="card-description">
             {description.length > 120 ? (
               <>
-                {description.slice(0, 120)}...
-                <small onClick={handlerReadMore}>Read More</small>
+                {isExpanded ? (
+                  <>
+                    {description}
+                    <small
+                      onClick={toggleDescription}
+                      className="show-description"
+                    >
+                      Show Less
+                    </small>
+                  </>
+                ) : (
+                  <>
+                    {description.slice(0, 120)}...
+                    <small
+                      className="show-description"
+                      onClick={toggleDescription}
+                    >
+                      Read More
+                    </small>
+                  </>
+                )}
               </>
             ) : (
               description

@@ -1,12 +1,91 @@
-# React + Vite
+# 🧠 Final Project - Role-Based Post Management Web App 🚀
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the **React Role-Based Post Management System**! This is a modern, responsive, and interactive front-end project built using **React JS** and **CSS**. The application allows users to explore posts and admins to create and manage their own posts using localStorage, with authentication and role-based access built in. 🎯
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌐 Live Demo
 
-## Expanding the ESLint configuration
+🔗 Link to Live Demo: (coming soon)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📚 Tech Stack
+
+- ⚛️ **React JS (Create React App)**
+- 🎨 **CSS**
+- 📦 **localStorage** for data persistence
+- 🌐 **JSONPlaceholder API** (https://jsonplaceholder.typicode.com)
+- 🔐 **Custom Role-based Authentication**
+
+---
+
+## 🧰 Features
+
+### 🔐 Authentication System
+
+- Login with:
+  - Username
+  - Mobile number
+  - OTP (Random 4-digit)
+  - Select role: `Admin` or `User`
+- Stores auth data in localStorage
+- Role-based access (Admin vs User)
+
+### 🏠 Home Page (`/`)
+
+- **Created Posts** (By Admin):
+
+  - Posts created by admin stored in `localStorage`
+  - Editable & Deletable (only for Admins)
+  - Clickable post cards for details view
+
+- **Explore Posts** (Fetched from API):
+  - First 10 posts from `JSONPlaceholder`
+  - Non-clickable cards with fallback image
+  - Real-time Search/Filter by Title
+
+### ✍️ Create Post Page (`/create-post`)
+
+- Accessible **only** to `Admin`
+- Form to create new post with:
+  - Title
+  - Description
+  - Image URL
+- Random `postId` generation
+- Saves post data to `localStorage`
+
+### 🔍 Post Detail Page (`/posts/:postId`)
+
+- Shows full post details
+- **Edit** and **Delete** options for Admin
+- Modal popup for editing post
+
+### 📦 Data Management
+
+- All created posts are stored in `localStorage`
+- Posts persist even after logout
+- JSON methods `JSON.stringify()` and `JSON.parse()` used
+
+### 🔁 Logout Functionality
+
+- Common `Header` with:
+  - Project Logo (top-left)
+  - Navigation tabs (Home, Create Post)
+  - Logout button (top-right)
+- Clicking logout opens a **confirmation modal** with:
+  - `Logout`
+  - `Cancel`
+
+---
+
+## 👨‍💻 Author
+
+Made with ❤️ by **Milan Koradiya**  
+[GitHub Profile](https://github.com/koradiyamilan12)
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License**.

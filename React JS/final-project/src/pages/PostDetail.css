@@ -1,7 +1,6 @@
 .post-detail-wrapper {
-  background-color: #7995c0;
+  background-color: var(--primary-bg);
   display: flex;
-  flex-direction: row;
   gap: 2rem;
   padding: 6rem;
   flex-wrap: wrap;
@@ -12,16 +11,16 @@
   flex: 1;
   max-width: 400px;
   padding: 1rem;
-  border: 2px solid #334155;
+  border: 2px solid var(--card-border);
   border-radius: 12px;
-  background-color: #1E293B;
-  color: #F8FAFC;
+  background-color: var(--card-bg);
+  color: var(--text-primary);
   text-align: center;
 }
 
 .post-preview h2 {
   margin-bottom: 1rem;
-  color: #F8FAFC;
+  color: var(--text-primary);
 }
 
 .post-preview-image {
@@ -35,29 +34,28 @@
 .post-preview-title {
   font-size: 1.5rem;
   margin: 0.5rem 0;
-  color: #F8FAFC;
+  color: var(--text-primary);
 }
 
 .post-preview-description {
-  color: #CDD5E1;
+  color: var(--text-secondary);
   font-size: 1rem;
 }
-
 
 .post-detail-form {
   flex: 1;
   max-width: 500px;
   padding: 1.5rem;
-  border: 2px solid #334155;
-  border-radius: 12px; 
-  background-color: #1E293B;
-  color: #F8FAFC;
+  border: 2px solid var(--card-border);
+  border-radius: 12px;
+  background-color: var(--card-bg);
+  color: var(--text-primary);
 }
 
 .post-detail-form h2 {
   margin-bottom: 1.5rem;
   text-align: center;
-  color: #F8FAFC;
+  color: var(--text-primary);
   font-size: 2rem;
 }
 
@@ -70,7 +68,7 @@
 .post-detail-form label {
   font-weight: 600;
   margin-bottom: 0.5rem;
-  color: #E2E8F0;
+  color: var(--form-label-color);
 }
 
 .post-detail-form input[type="text"],
@@ -78,10 +76,10 @@
 .post-detail-form input[type="file"] {
   padding: 0.5rem;
   font-size: 1rem;
-  border: 2px solid #4B5563;
+  border: 2px solid var(--form-border);
   border-radius: 8px;
   background-color: transparent;
-  color: #F8FAFC;
+  color: var(--text-primary);
 }
 
 .post-detail-form textarea {
@@ -90,7 +88,7 @@
 }
 
 .form-error {
-  color: crimson;
+  color: var(--error-color);
   font-size: 0.875rem;
   margin-top: 0.25rem;
 }
@@ -113,24 +111,23 @@
 }
 
 .post-detail-btn-wrapper button[type="button"] {
-  background-color: crimson;
-  color: white;
-  border-color: crimson;
+  background-color: var(--error-color);
+  color: var(--text-light);
+  border-color: var(--error-color);
 }
 
 .post-detail-btn-wrapper button[type="button"]:hover {
   background-color: transparent;
-  color: crimson;
+  color: var(--error-color);
 }
 
 .post-detail-btn-wrapper button[type="submit"] {
-  background-color: #22C55E;
-  color: white;
-  border-color: #22C55E;
+  background-color: var(--success-color);
+  color: var(--text-light);
+  border-color: var(--success-color);
 }
 
 .post-detail-btn-wrapper button[type="submit"]:hover {
   background-color: transparent;
-  color: #22C55E;
+  color: var(--success-color);
 }
-

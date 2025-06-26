@@ -1,6 +1,5 @@
 import './TodoDetail.css'
 import { useParams } from "react-router-dom";
-import Navbar from "../components/Navbar";
 import { useEffect, useState } from "react";
 
 const TodoDetail = () => {
@@ -15,7 +14,6 @@ const TodoDetail = () => {
 
   return (
     <>
-      <Navbar />
        <div className="todo-detail-container">
         <div>TodoDetail - {todoId}</div>
         {task ? (

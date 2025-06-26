@@ -1,24 +1,52 @@
 :root {
-  --bg: #F9FAFB;
-  --text: #111827;
-  --surface: #ffffff;
-  --primary: #4F46E5;
-  --accent: #F97316;
+  --primary-bg: #ffffff;
+  --text-light: #1e293b;
+  --text-primary: #1e293b;
+  --text-secondary: #475569;
+  --form-bg: #f8fafc;
+  --form-border: #cbd5e1;
+  --form-label-color: #334155;
+  --card-bg: #f1f5f9;
+  --card-border: #cbd5e1;
+  --navbar-bg: #e2e8f0;
+  --button-blue: #3b82f6;
+  --button-blue-hover: #2563eb;
+  --success-color: #10b981;
+  --error-color: #ef4444;
+  --error-text: #dc2626;
+  --button-text: #ffffff;
+  --overlay-backdrop: rgba(0, 0, 0, 0.5);
+  --overlay-bg: #ffffff;
+  --icon-color: #171f29;
 }
 
 .dark {
-  --bg: #0F172A;
-  --text: #F1F5F9;
-  --surface: #1E293B;
-  --primary: #6366F1;
-  --accent: #FB923C;
+  --primary-bg: #0f172a;
+  --text-light: #f8fafc;
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --form-bg: #1e293b;
+  --form-border: #334155;
+  --form-label-color: #cbd5e1;
+  --card-bg: #1e293b;
+  --card-border: #334155;
+  --navbar-bg: #1e293b;
+  --button-blue: #3b82f6;
+  --button-blue-hover: #2563eb;
+  --success-color: #10b981;
+  --error-color: #ef4444;
+  --error-text: #f87171;
+  --button-text: #ffffff;
+  --overlay-backdrop: rgba(255, 255, 255, 0.1);
+  --overlay-bg: #212630;
+  --icon-color: #f8fafc;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Inter', 'Poppins', sans-serif;
+  font-family: Helvetica;
 }
 
 html,

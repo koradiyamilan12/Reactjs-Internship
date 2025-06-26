@@ -1,7 +1,7 @@
 .page-not-found {
- text-align: center;
- margin-top: 20%;
- font-size: 2rem;
- color: crimson;
- font-weight: 600;
+  text-align: center;
+  margin-top: 20%;
+  font-size: 2rem;
+  color: var(--error-color);
+  font-weight: 600;
 }

@@ -1,8 +1,6 @@
  :root {
    --dark: #393939;
    --white: #e4e4e4;
-   --seccolor: #fff;
-   --darkgray: #272727;
  }
 
  .darkmode {
@@ -17,7 +15,6 @@
 
 
  .container {
-   /* background-color: #393939; */
    padding: 30px;
    min-height: 100vh;
  }
@@ -36,8 +33,6 @@
  }
 
  .todo-container {
-   /* background-color: #272727; */
-   /* color: white; */
    max-width: 1200px;
    height: auto;
    margin: auto;
@@ -60,11 +55,4 @@
    margin: auto;
    font-size: 1.4rem;
    font-weight: 400;
- }
-
- .page-notefound-heading {
-   margin-top: 300px;
-   color: red;
-   font-size: 3rem;
-   text-align: center;
  }

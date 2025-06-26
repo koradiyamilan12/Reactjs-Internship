@@ -1,8 +1,8 @@
 .navbar {
   display: flex;
   padding: 15px;
-  color: #F1F5F9;
-  background-color: #1E293B;
+  color: var(--text-light);
+  background-color: var(--navbar-bg);
   gap: 50px;
   justify-content: space-evenly;
   align-items: center;
@@ -12,32 +12,52 @@
   display: flex;
   gap: 10px;
   align-items: center;
+  text-decoration: none;
 }
 
 .logo {
   width: 40px;
+  cursor: pointer;
 }
 
 .nav-item {
-  font-size: 1rem;
+  font-size: 1.2rem;
   text-decoration: none;
-  font-weight: 600;
-  color: #F1F5F9;
+  font-weight: 400;
+  color: var(--text-light);
+}
+
+.navbar-btn-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.theme-toggle-btn {
+  margin-right: 20px;
+  background: none;
+  border: none;
+  color: var(--icon-color);
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.theme-toggle-btn:hover {
+  color: var(--button-blue-hover);
 }
 
 .navbar-btn {
   padding: 10px 30px;
-  background-color: crimson;
-  border: 2px solid crimson;
+  background-color: var(--error-color);
+  border: 2px solid var(--error-color);
   border-radius: 9px;
   font-size: 1rem;
-  color: white;
+  color: var(--button-text);
   cursor: pointer;
   transition: ease 0.3s;
   text-decoration: none;
 }
 
 .navbar-btn:hover {
-  color: crimson;
+  color: var(--error-color);
   background-color: transparent;
 }

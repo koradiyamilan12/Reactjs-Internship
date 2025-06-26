@@ -10,36 +10,48 @@ const Login = () => {
 
   const navigate = useNavigate();
 
-  const loginData = JSON.parse(localStorage.getItem("userDetails")) || {};
-
   const formSubmitHandler = (e) => {
     e.preventDefault();
-
-    if (!userEmail) {
-      setUserEmailIsRequired("Email is required.");
-      return;
-    } else if (!userPassword) {
-      setUserPasswordIsRequired("Password is required.");
-      return;
-    } else if (userEmail !== loginData.email) {
-      setUserEmailIsRequired("Email does not match.");
-      return;
-    } else if (userPassword !== loginData.password) {
-      setUserPasswordIsRequired("Password is incorrect.");
-      return;
-    }
-    const userLoginData = {
-      userEmail,
-      userPassword,
-    };
-    console.log(userLoginData);
-    setUserEmail("");
-    setUserPassword("");
 
     setUserEmailIsRequired("");
     setUserPasswordIsRequired("");
 
+    if (!userEmail) {
+      setUserEmailIsRequired("Email is required.");
+      return;
+    }
+
+    if (!userPassword) {
+      setUserPasswordIsRequired("Password is required.");
+      return;
+    }
+
+    const loginData = JSON.parse(localStorage.getItem("registerDetails")) || [];
+
+    const matchedUser = loginData.find(
+      (user) => user.email === userEmail && user.password === userPassword
+    );
+
+    if (!matchedUser) {
+      const emailExists = loginData.some((user) => user.email === userEmail);
+      if (!emailExists) {
+        setUserEmailIsRequired("Email does not exist.");
+      } else {
+        setUserPasswordIsRequired("Password is incorrect.");
+      }
+      return;
+    }
+
+    console.log("Login successful:", matchedUser);
+    localStorage.setItem("loginDetails", JSON.stringify(matchedUser));
+
+    setUserEmail("");
+    setUserPassword("");
     navigate("/");
+  };
+
+  const registerHandler = () => {
+    navigate("/register");
   };
 
   return (
@@ -51,9 +63,7 @@ const Login = () => {
           <div className="login-form-filed">
             <label htmlFor="email">Email Address:</label>
             <input
-              onChange={(e) => {
-                setUserEmail(e.target.value);
-              }}
+              onChange={(e) => setUserEmail(e.target.value)}
               value={userEmail}
               className="login-form-input"
               type="email"
@@ -67,9 +77,7 @@ const Login = () => {
           <div className="login-form-filed">
             <label htmlFor="password">Password:</label>
             <input
-              onChange={(e) => {
-                setUserPassword(e.target.value);
-              }}
+              onChange={(e) => setUserPassword(e.target.value)}
               value={userPassword}
               className="login-form-input"
               name="userpassword"
@@ -84,6 +92,12 @@ const Login = () => {
             <button className="login-form-btn">Login</button>
           </div>
         </form>
+        <p className="login-link">
+          if you don't have an account
+          <span className="login" onClick={registerHandler}>
+            Register
+          </span>
+        </p>
       </div>
     </div>
   );

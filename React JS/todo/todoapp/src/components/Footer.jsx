@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <div>
       <p className={`footer ${mode === "dark" ? "darkmode" : "lightmode"}`}>
-        Footer
+        Made with ❤️ in India 
       </p>
     </div>
   );

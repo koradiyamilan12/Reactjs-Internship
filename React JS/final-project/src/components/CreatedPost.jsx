@@ -14,7 +14,9 @@ const CreatedPost = () => {
     <section className="created-post-section">
       <h2 className="explore-post-heading">Created Post</h2>
       <div className="posts-container">
-        {createdPosts.length === 0 && <p className="no-post-created">No post added.</p>}
+        {createdPosts.length === 0 && (
+          <p className="no-post-created">No post added.</p>
+        )}
         {createdPosts.map((item) => (
           <PostCard
             key={item.id}

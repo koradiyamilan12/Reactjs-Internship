@@ -1,10 +1,14 @@
-import Navbar from "../components/Navbar";
+import { useContext } from "react";
 import "./About.css";
+import { ModeContext } from "../context/mode-context";
 
 const About = () => {
+  const { mode } = useContext(ModeContext);
+
   return (
-    <div className="about-wrapper">
-      <Navbar />
+    <div
+      className={`about-wrapper ${mode === "dark" ? "darkmode" : "lightmode"}`}
+    >
       <div className="about-container">
         <h2 className="about-heading">About ToDo</h2>
         <div className="about-line"></div>

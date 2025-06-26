@@ -5,7 +5,7 @@ const Card = ({ img, heading, desc }) => {
       <div className="card-info">
         <div className="card-titel">{heading}</div>
         <p className="card-desc">{desc}</p>
-        <a className="card-link" href="">
+        <a className="card-link" href="#">
           Learn More
         </a>
       </div>

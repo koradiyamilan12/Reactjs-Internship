@@ -1,14 +1,15 @@
+import Form from "./components/Form";
 import Services from "./components/Services";
+import TestForm from "./components/TestForm";
 
 function App() {
   return (
     <>
-      <Services />
+      {/* <Form /> */}
+      {/* <Services /> */}
+      {/* <TestForm /> */}
     </>
   );
 }
 
 export default App;
-
-// data passing techniques
-// 1) parent to child => props

@@ -13,36 +13,39 @@ const initialValues = {
 };
 
 const Login = () => {
-  const [loginData, setLoginData] = useState([]);
-
+  const [generatedOtp, setGeneratedOtp] = useState("");
   const navigate = useNavigate();
-
-  const handleGenerateOtp = () => {
-    const newOtp = Math.floor(1000 + Math.random() * 900).toString();
-    values.otp = newOtp;
-    alert(`Your OTP is: ${newOtp}`);
-  };
 
   const formik = useFormik({
     initialValues: initialValues,
     validationSchema: LoginSchema,
     onSubmit: (values, action) => {
-      setLoginData(values);
+      if (values.otp.toString() !== generatedOtp) {
+        toast.error("Incorrect OTP ❌");
+        return;
+      }
+
+      localStorage.setItem("login_data", JSON.stringify(values));
       action.resetForm();
-      toast.success("Successfully logged in✅");
+      toast.success("Successfully logged in ✅");
       navigate("/");
     },
   });
 
-  localStorage.setItem("login_data", JSON.stringify(loginData));
-
   const { values, errors, touched, handleChange, handleBlur, handleSubmit } =
     formik;
+
+  const handleGenerateOtp = () => {
+    const newOtp = Math.floor(1000 + Math.random() * 9000).toString();
+    setGeneratedOtp(newOtp);
+    alert(`Your OTP is: ${newOtp}`);
+  };
 
   return (
     <section className="login-section">
       <form onSubmit={handleSubmit} className="login-form">
         <h2 className="form-heading">Login</h2>
+
         <div className="form-container">
           <label className="form-label" htmlFor="uname">
             Username
@@ -62,13 +65,14 @@ const Login = () => {
             <small className="form-errors">{errors.username}</small>
           )}
         </div>
+
         <div
           className="radio-wrapper"
           role="group"
           aria-labelledby="role-group"
         >
           <label className="form-label" htmlFor="user">
-            user
+            User
           </label>
           <input
             className="form-radio-input"
@@ -80,9 +84,10 @@ const Login = () => {
             onChange={handleChange}
           />
           <label className="form-label" htmlFor="admin">
-            admin
+            Admin
           </label>
           <input
+            className="form-radio-input"
             type="radio"
             id="admin"
             name="role"
@@ -90,7 +95,11 @@ const Login = () => {
             checked={values.role === "admin"}
             onChange={handleChange}
           />
+          {errors.role && touched.role && (
+            <small className="form-errors">{errors.role}</small>
+          )}
         </div>
+
         <div>
           <label className="form-label" htmlFor="mnumber">
             Mobile number
@@ -109,6 +118,7 @@ const Login = () => {
             <small className="form-errors">{errors.number}</small>
           )}
         </div>
+
         <div>
           <label className="form-label" htmlFor="otp">
             OTP
@@ -136,6 +146,7 @@ const Login = () => {
             <small className="form-errors">{errors.otp}</small>
           )}
         </div>
+
         <div className="btn-wrapper">
           <button type="submit" className="login-form-btn">
             Login

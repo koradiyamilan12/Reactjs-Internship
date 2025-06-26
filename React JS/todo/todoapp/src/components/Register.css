@@ -1,5 +1,5 @@
 .register-container {
-  padding: 50px;
+  padding: 30px;
   background-color: #393939;
   min-height: 100vh;
 }
@@ -43,18 +43,30 @@
 }
 
 .register-form-btn {
-  padding: 14px 35px;
-  background-color: #966670;
-  border: 2px solid #966670;
+  padding: 10px 30px;
+  background-color: crimson;
+  border: 2px solid crimson;
   border-radius: 9px;
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: white;
-  opacity: 0.5;
   cursor: pointer;
+  transition: ease 0.3s;
 }
 
 .register-form-btn:hover {
-  background-color: crimson;
-  border: 2px solid crimson;
-  opacity: 1;
+  color: crimson;
+  background-color: transparent;
+}
+
+.login-link {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.login {
+  text-decoration: underline;
+  font-size: 1rem;
+  cursor: pointer;
+  color: crimson;
+  margin-left: 5px;
 }

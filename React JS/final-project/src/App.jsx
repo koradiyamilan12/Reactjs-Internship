@@ -7,7 +7,7 @@ import RootLayout from "./components/RootLayout";
 import CreatePost from "./pages/CreatePost";
 import PostDetail from "./pages/PostDetail";
 
-const user = JSON.parse(localStorage.getItem("login_data")) || [];
+const user = JSON.parse(localStorage.getItem("login_data")) || {};
 
 const routes = createBrowserRouter([
   {

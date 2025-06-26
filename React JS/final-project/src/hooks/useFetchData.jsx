@@ -21,7 +21,7 @@ const useFetchData = (url) => {
     fetchApiData();
   }, [url]);
 
-  return { data, isLoading, setData};
+  return { data, isLoading };
 };
 
 export default useFetchData;

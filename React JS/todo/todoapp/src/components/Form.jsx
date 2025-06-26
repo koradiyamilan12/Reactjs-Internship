@@ -2,7 +2,9 @@ import "./Form.css";
 import { useEffect, useState } from "react";
 
 const Form = ({ getData, editData, setEditData, allTask, updateData }) => {
+
   const [task, setTask] = useState("");
+  
   useEffect(() => {
     if (editData && editData.task) {
       setTask(editData.task);
@@ -35,18 +37,18 @@ const Form = ({ getData, editData, setEditData, allTask, updateData }) => {
   };
 
   return (
-      <form className="form" onSubmit={formSubmitHandler}>
-        <input
-          className="task-input"
-          onChange={inputChangeHandler}
-          type="text"
-          value={task || ""}
-          id="task"
-          name="task-name"
-          placeholder="Enter your task..."
-        />
-        <button className="task-add-btn">{editData ? "Update" : "Add"}</button>
-      </form>
+    <form className="form" onSubmit={formSubmitHandler}>
+      <input
+        className="task-input"
+        onChange={inputChangeHandler}
+        type="text"
+        value={task || ""}
+        id="task"
+        name="task-name"
+        placeholder="Enter your task..."
+      />
+      <button className="task-add-btn">{editData ? "Update" : "Add"}</button>
+    </form>
   );
 };
 

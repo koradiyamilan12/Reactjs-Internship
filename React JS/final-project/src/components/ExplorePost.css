@@ -1,9 +1,9 @@
 .explore-post-section {
-  background-color: #7995c0;
+  background-color: var(--primary-bg);
 }
 
 .loader {
- margin: 100px auto;
+  margin: 100px auto;
 }
 
 .posts-container {
@@ -16,11 +16,11 @@
 }
 
 .explore-post-heading {
-  color: white;
-  padding: 10px 0px;
+  color: var(--text-light);
+  padding: 40px 0px 20px 0px;
   text-align: center;
   font-size: 2rem;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .search-box {
@@ -33,34 +33,22 @@
 }
 
 .search-input {
-  padding: 5px;
-  border: 1px solid black;
+  outline: none;
+  background-color: var(--form-bg);
+  padding: 5px 35px 5px 10px;
+  border: 1px solid var(--form-border);
+  color: var(--text-light);
   border-radius: 8px;
   font-size: 1rem;
 }
 
 .search-icon {
+  color: var(--text-light);
   position: absolute;
   top: 12px;
   font-size: 1.5rem;
   right: 10px;
 }
-
-/* .search-btn {
-  padding: 10px 25px;
-  background-color: crimson;
-  border: 2px solid crimson;
-  border-radius: 9px;
-  font-size: 1rem;
-  color: white;
-  cursor: pointer;
-  transition: ease 0.3s;
-  text-decoration: none;
-}
-
-.search-btn:active {
-  scale: 0.95;
-} */
 
 .post-not-found {
   width: 100%;
@@ -68,6 +56,46 @@
   padding: 20px;
   font-size: 2rem;
   font-weight: 600;
-  color: crimson;
+  color: var(--error-text);
   text-align: center;
+}
+
+.pagination-container {
+  margin-top: 20px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.pagination-count {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  color: white;
+}
+
+.pagination-btn {
+  background-color: var(--card-bg);
+  border: 2px solid var(--card-bg);
+  border-radius: 8px;
+  font-size: 1.2rem;
+  padding: 5px 10px;
+}
+
+.pagination-btn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.pagination-btn:hover {
+  border: 2px solid var(--card-border);
+}
+
+.pagination-btn:active {
+  scale: .95;
+}
+
+.pagination-icon {
+  color: white;
+  margin-top: 5px;
 }

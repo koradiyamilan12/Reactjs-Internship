@@ -1,15 +1,12 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { v4 as uuidv4 } from "uuid";
-import Navbar from "../components/Navbar";
 import Form from "../components/Form";
 import Note from "../components/Note";
 import { FaCheck } from "react-icons/fa";
+import { ModeContext } from "../context/mode-context";
 
 const HomePage = () => {
-  const savedMode = JSON.parse(localStorage.getItem("darkMode"));
-  const [darkMode, setDarkMode] = useState(
-    typeof savedMode === "boolean" ? savedMode : true
-  );
+  const { mode } = useContext(ModeContext);
 
   const [allTask, setAllTask] = useState(
     JSON.parse(localStorage.getItem("allTodos")) || []
@@ -50,16 +47,15 @@ const HomePage = () => {
     localStorage.setItem("allTodos", JSON.stringify(allTask));
   }, [allTask]);
 
-  useEffect(() => {
-    localStorage.setItem("darkMode", JSON.stringify(darkMode));
-  }, [darkMode]);
-
   return (
     <>
-      <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
-      <div className={`container ${darkMode ? "darkmode" : "lightmode"}`}>
+      <div
+        className={`container ${mode === "dark" ? "darkmode" : "lightmode"}`}
+      >
         <div
-          className={`todo-container ${darkMode ? "darkmode" : "lightmode"}`}
+          className={`todo-container ${
+            mode === "dark" ? "darkmode" : "lightmode"
+          }`}
         >
           <h1 className="main-heading">
             My Todos <FaCheck className="check-logo" />

@@ -1,16 +1,16 @@
 .backdrop {
-  background-color: #111;
+  background-color: var(--overlay-backdrop);
   height: 100vh;
   width: 100vw;
   position: fixed;
   left: 0;
   top: 0;
   z-index: 10;
-  opacity: .75;
+  opacity: 0.75;
 }
 
 .overlay-wrapper {
-  background-color: #1E293B;
+  background-color: var(--overlay-bg);
   border-radius: 10px;
   height: 250px;
   width: 550px;
@@ -36,11 +36,11 @@
 
 .btn-cancel {
   padding: 10px 30px;
-  background-color: green;
-  border: 2px solid green;
+  background-color: var(--success-color);
+  border: 2px solid var(--success-color);
   border-radius: 9px;
   font-size: 1.1rem;
-  color: white;
+  color: var(--text-light);
   cursor: pointer;
   transition: ease 0.3s;
   text-decoration: none;
@@ -48,22 +48,22 @@
 
 .btn-logout {
   padding: 10px 30px;
-  background-color: crimson;
-  border: 2px solid crimson;
+  background-color: var(--error-color);
+  border: 2px solid var(--error-color);
   border-radius: 9px;
   font-size: 1.1rem;
-  color: white;
+  color: var(--text-light);
   cursor: pointer;
   transition: ease 0.3s;
   text-decoration: none;
 }
 
 .btn-cancel:hover {
-  color: green;
+  color: var(--success-color);
   background-color: transparent;
 }
 
 .btn-logout:hover {
-  color: crimson;
+  color: var(--error-color);
   background-color: transparent;
 }

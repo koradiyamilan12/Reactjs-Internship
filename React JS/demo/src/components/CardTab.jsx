@@ -34,14 +34,18 @@ const dummy = [
 const CardTab = () => {
   return (
     <div className="card-tab-container">
-      {dummy.map((item, index) => (
-        <Card
-          key={index}
-          img={item.logo}
-          heading={item.title}
-          desc={item.description}
-        />
-      ))}
+      {dummy.length > 0 ? (
+        dummy.map((item, index) => (
+          <Card
+            key={index}
+            img={item.logo}
+            heading={item.title}
+            desc={item.description}
+          />
+        ))
+      ) : (
+        <p>No data found.</p>
+      )}
     </div>
   );
 };

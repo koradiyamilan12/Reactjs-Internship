@@ -1,5 +1,5 @@
 .created-post-section {
-  background-color: #7995c0;
+  background-color: var(--primary-bg);
 }
 
 .no-post-created {
@@ -7,6 +7,6 @@
   width: 100%;
   font-size: 2rem;
   text-align: center;
-  color: crimson;
+  color: var(--error-text);
   font-weight: 600;
 }

@@ -1,14 +1,14 @@
 .create-post-section {
-  background-color: #7995c0;
-  width: 100vw;
+  padding: 1rem;
+  background-color: var(--primary-bg);
   height: 100vh;
   overflow: hidden;
 }
 
 .create-post-form {
-  padding: 20px;
-  background-color: #1E293B;
-  width: 600px;
+  padding: 2rem;
+  background-color: var(--form-bg);
+  max-width: 600px;
   margin: 30px auto;
   border-radius: 8px;
   display: flex;
@@ -19,7 +19,8 @@
 .create-post-form-heading {
   text-align: center;
   font-size: 2rem;
-  color: white;
+  font-weight: 400;
+  color: var(--text-light);
 }
 
 .form-wrapper {
@@ -28,25 +29,26 @@
 }
 
 .create-post-form-label {
-  color: #E2E8F0;
+  color: var(--form-label-color);
   font-size: 1.2rem;
-  margin-bottom: 5px
+  margin-bottom: 5px;
 }
 
 .image-input {
-  color: white;
+  color: var(--text-light);
 }
 
 .create-post-form-input {
   padding: 10px;
-  border: 2px solid #4B5563;
+  font-size: 1.2rem;
+  border: 2px solid var(--form-border);
   border-radius: 8px;
 }
 
 .create-post-form-error {
-  color: crimson;
+  color: var(--error-text);
   margin: 5px 0px 0px;
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 
 .btn-wrapper {
@@ -59,11 +61,11 @@
   border: none;
   border-radius: 8px;
   font-size: 1rem;
-  font-weight: 600;
-  background-color: #3549fb;
-  color: #FFFFFF;
+  font-weight: 400;
+  background-color: var(--button-blue);
+  color: var(--text-light);
 }
 
 .create-post-form-btn:hover {
-  background-color: #393bc6;
+  background-color: var(--button-blue-hover);
 }

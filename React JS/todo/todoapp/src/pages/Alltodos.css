@@ -1,8 +1,6 @@
 .alltodos-container {
   max-width: 100%;
   min-height: 100dvh;
-  background-color: #393939;
-  color: #fff;
 }
 
 .alltodos-warpper {
@@ -25,7 +23,6 @@
 }
 
 .todo-desc {
-  background-color: #272727;
   display: flex;
   justify-content: space-between;
   padding: 12px 16px;
@@ -51,4 +48,14 @@
 
 .loader {
   margin-top: 200px;
+}
+
+.darkmodedesc {
+  background-color: black;
+  color: white;
+}
+
+.lightmodedesc {
+  background-color: white;
+  color: black;
 }
